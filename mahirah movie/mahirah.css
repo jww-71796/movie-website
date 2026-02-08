@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9edf3;
+    color: #3e2a3b;
+}
+
+/* HEADER */
+
+.main-header {
+    background: linear-gradient(135deg, #6d4b6f, #7fc8b2);
+    padding: 60px 20px;
+}
+
+.header-overlay {
+    text-align: center;
+    color: white;
+}
+
+.header-overlay h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+}
+
+/* NAV */
+
+nav a {
+    color: #eafff8;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* POSTER */
+
+.poster-section {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.poster-section img {
+    max-width: 520px;
+    border-radius: 16px;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+/* CONTENT */
+
+.content {
+    display: flex;
+    gap: 35px;
+    padding: 50px;
+}
+
+.left-column { width: 60%; }
+.right-column { width: 40%; }
+
+/* CARDS */
+
+.card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 18px;
+    border-left: 6px solid #7fc8b2;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* TEXT */
+
+h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #6d4b6f;
+}
+
+blockquote {
+    background-color: #e8fff8;
+    border-left: 5px solid #7fc8b2;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* IMAGES */
+
+.right-column img {
+    width: 100%;
+    border-radius: 14px;
+    margin-bottom: 15px;
+}
+
+/* TABLE */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #7fc8b2;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #cdeee4;
+}
+
+/* VIDEO */
+
+.video-section {
+    background-color: #e8fff8;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.video-section iframe {
+    width: 70%;
+    height: 380px;
+    border-radius: 16px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #6d4b6f;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+    .content {
+        flex-direction: column;
+    }
+    .left-column,
+    .right-column {
+        width: 100%;
+    }
+    .video-section iframe {
+        width: 100%;
+        height: 260px;
+    }
+}
