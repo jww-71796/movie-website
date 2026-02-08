@@ -1,0 +1,64 @@
+body{
+     height: 100vh;
+    background: url(images/welcome.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+header {
+    display: flex;          
+    align-items: center;
+     background: rgba(9, 135, 137, 0.036);
+    
+   
+}
+
+header h3{
+    position:relative;
+   padding:0 2rem;
+   color:rgb(21, 2, 2);
+}   
+
+nav {
+    margin-left: auto;
+    padding-right: 10px;
+    font-size: 1rem;
+
+}
+
+nav a{
+    margin-left: 15px;
+    color:rgb(14, 90, 72);
+    text-decoration: none;
+}
+
+nav a:hover{
+    color:rgb(85, 172, 95);
+}
+
+
+.welcome h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: New Century Schoolbook, TeX Gyre Schola, serif；
+}
+
+h1{
+    color:black;
+}
+
+p{
+    color:b;
+}
+
+footer{
+    display:block;
+    clear:both;
+    background-color: hsl(208, 100%, 97%);
+    text-align: center;
+
+    padding: 25px
+    
+}

@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #f6f2f7;
+    color: #333;
+}
+
+/* HEADER */
+.hero {
+    background: linear-gradient(rgba(45,27,47,0.9), rgba(45,27,47,0.9)),
+                url("images/bibi-books.jpg") center/cover;
+    color: white;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+/* NAVIGATION */
+.navigation {
+    background: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    padding: 0;
+}
+
+.navigation ul {
+    max-width: 1200px;
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 0;
+}
+
+.navigation li {
+    border-right: 1px solid #e0e0e0;
+}
+
+.navigation li:last-child {
+    border-right: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 16px 24px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.navigation a:hover {
+    background: #f6f2f7;
+    color: #8b5fa6;
+}
+
+/* LAYOUT */
+.container {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+/* MEMBER CARD */
+.member-card {
+    background: white;
+    border-radius: 20px;
+    padding: 35px;
+    margin-bottom: 60px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+    position: relative;
+}
+
+/* ACCENT STRIPS */
+.accent-purple { border-left: 8px solid #8b5fa6; }
+.accent-rose { border-left: 8px solid #c76c9a; }
+.accent-dark { border-left: 8px solid #3c2a3d; }
+.accent-gold { border-left: 8px solid #c9a24d; }
+
+/* HEADER */
+.member-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile-img.small {
+    width: 90px;
+    height: 90px;
+}
+
+/* TEXT */
+.nickname {
+    display: inline-block;
+    margin-top: 6px;
+    color: #7a3c8c;
+    font-weight: bold;
+}
+
+/* CONTENT Grid */
+.content-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 40px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.content-grid::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    background: linear-gradient(to bottom, #e0c7ea, #f6f2f7);
+    border-radius: 10px;
+}
+
+
+
+.content-columns p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+/* IMAGE COLUMN */
+.image-column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.image-column img {
+    width: 100%;
+    border-radius: 14px;
+}
+
+/* FOOTER */
+footer {
+    background: #2d1b2f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+} 
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    align-items: center;
+}
+
+.image-grid img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+    transition: transform 0.3s ease;
+}
+
+.image-grid img:hover {
+    transform: scale(1.04);
+}
+.content-grid > div:first-child {
+    background: #faf7fb;
+    padding: 25px 28px;
+    border-radius: 18px;
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,0.04);
+}
+ 
+.reverse .content-grid {
+    grid-template-columns: 1fr 1.2fr;
+}
+
+.reverse .content-grid::before {
+    left: auto;
+    right: 0;
+}
